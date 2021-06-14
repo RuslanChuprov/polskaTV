@@ -38,6 +38,38 @@
     </classes>
   </test>
 
+  <test name = "test4">
+    <groups>
+      <run>
+        <include name="checkintest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name = "org.example.RegistrationPageTest"/>
+    </classes>
+  </test>
+
+  <test name = "test5">
+    <groups>
+      <run>
+        <include name="checkintest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name = "org.example.RegistrPhonePageTest"/>
+    </classes>
+  </test>
+
+  <test name = "test6">
+    <groups>
+      <run>
+        <include name="checkintest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name = "org.example.CorrectLoginTest"/>
+    </classes>
+  </test>
  </suite>
 
 
