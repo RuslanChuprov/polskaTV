@@ -10,30 +10,36 @@ public class CorrectLogin extends BasePage {
         return Web.site.appTV.correctLogin;
     }
 
-    public WebElement getCloselField() {
+    public WebElement getCloselButton() {
         return Web.driver.findElement(By.xpath("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button"));
     }
-    public CorrectLogin clickCloseField() {
-        waitForElement(getCloselField()).click();
+    public CorrectLogin clickCloseButton() {
+        waitForElement(getCloselButton()).click();
         return Web.site.appTV.correctLogin;
     }
-    public CorrectLogin  windowMaximize () {
+   /* public CorrectLogin  windowMaximize () {
         Web.driver.manage().window().maximize();
         return Web.site.appTV.correctLogin;
-    }
-    public WebElement getJoinField() {
+    } */
+    public WebElement getJoinButton() {
         return Web.driver.findElement(By.xpath("//*[@id=\"authorization-link\"]"));
     }
-    public CorrectLogin clickJoinField() {
-        waitForElement(getJoinField()).click();
+    public CorrectLogin clickJoinButon() {
+        waitForElement(getJoinButton()).click();
         return Web.site.appTV.correctLogin;
     }
     public WebElement getLoginUserEmailField() {
         return Web.driver.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/form/div[1]/input"));
     }
-    public RegistrationPage typeTextToLoginUserEmailField(String email) {
+    public CorrectLogin typeTextToLoginUserEmailField(String email) {
         waitForElement(getLoginUserEmailField()).sendKeys(email, Keys.ENTER);
-        return Web.site.appTV.registrationPage;
+        return Web.site.appTV.correctLogin;
     }
-
+    public WebElement getLoginUserPasswordField() {
+        return Web.driver.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/form/div[2]/div/input"));
+    }
+    public CorrectLogin typeTextToLoginUserPasswordField(String password) {
+        waitForElement(getLoginUserPasswordField()).sendKeys(password, Keys.ENTER);
+        return Web.site.appTV.correctLogin;
+    }
 }

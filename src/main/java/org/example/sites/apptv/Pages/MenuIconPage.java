@@ -10,18 +10,18 @@ public class MenuIconPage extends BasePage {
         Web.driver.get("https://test.polskafirmatv.com/");
         return Web.site.appTV.menuIconPage;
     }
-    public WebElement getCloselField() {
+    public WebElement getCloselButton() {
         return Web.driver.findElement(By.xpath("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button"));
     }
-    public MenuIconPage clickCloseField() {
-        waitForElement(getCloselField()).click();
+    public MenuIconPage clickCloseButton() {
+        waitForElement(getCloselButton()).click();
         return Web.site.appTV.menuIconPage;
     }
-    public WebElement getMenuIconField() {
+    public WebElement getMenuIconButton() {
         return Web.driver.findElement(By.xpath("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button"));
     }
-    public MenuIconPage clickMenuIconField() {
-        waitForElement(getMenuIconField()).click();
+    public MenuIconPage clickMenuIconButton() {
+        waitForElement(getMenuIconButton()).click();
         return Web.site.appTV.menuIconPage;
     }
     public MenuIconPage  windowMaximize () {

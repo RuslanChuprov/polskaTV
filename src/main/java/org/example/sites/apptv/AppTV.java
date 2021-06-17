@@ -7,7 +7,7 @@ public class AppTV {
     public MainPage mainPage = new MainPage();
     public MenuIconPage menuIconPage = new MenuIconPage();
     public RegistrationPage registrationPage = new RegistrationPage();
-    public RegistrPhonePage registrPhonePage = new RegistrPhonePage();
+    public RegistrationPhonePage registrPhonePage = new RegistrationPhonePage();
     public CorrectLogin correctLogin = new CorrectLogin();
 
 

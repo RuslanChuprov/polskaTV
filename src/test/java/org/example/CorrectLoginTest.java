@@ -1,4 +1,5 @@
 package org.example;
+
 import org.example.sites.apptv.AppTV;
 import org.example.web.Web;
 import org.testng.annotations.Test;
@@ -13,9 +14,9 @@ public class CorrectLoginTest extends BaseTest {
         basePage
                 .correctLogin
                 .openPage()
-                .windowMaximize()
-                .clickCloseField()
-                .clickJoinField()
-                .typeTextToLoginUserEmailField(Credentials.EMAIL);
+                .clickCloseButton()
+                .clickJoinButon()
+                .typeTextToLoginUserEmailField(Credentials.EMAIL)
+                .typeTextToLoginUserPasswordField(Credentials.PASSWORD);
     }
 }

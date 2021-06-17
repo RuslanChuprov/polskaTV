@@ -14,15 +14,14 @@ public class RegistrationPageTest extends BaseTest {
         basePage
                 .registrationPage
                 .openPage()
-                .windowMaximize()
                 .clickCloseField()
-                .clickJoinField()
+                .clickJoinButton()
                 .clickQuickRegistField()
                 .typeTextToEmailField(Credentials.EMAIL)
                 .typeTextToFirstNameField(Credentials.FIRSTNAME)
                 .typeTextToLastNameField(Credentials.LASTNAME)
                 .typeTextToPasswordField(Credentials.PASSWORD)
-                .clickSignUpField();
+                .clickSignUpButton();
     }
 
 }

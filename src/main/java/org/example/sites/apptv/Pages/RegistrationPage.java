@@ -22,11 +22,11 @@ public class RegistrationPage extends BasePage{
         Web.driver.manage().window().maximize();
         return Web.site.appTV.registrationPage;
     }
-    public WebElement getJoinField() {
+    public WebElement getJoinButton() {
         return Web.driver.findElement(By.xpath("//*[@id=\"authorization-link\"]"));
     }
-    public RegistrationPage clickJoinField() {
-        waitForElement(getJoinField()).click();
+    public RegistrationPage clickJoinButton() {
+        waitForElement(getJoinButton()).click();
         return Web.site.appTV.registrationPage;
     }
     public WebElement getQuickRegistField() {
@@ -65,11 +65,11 @@ public class RegistrationPage extends BasePage{
         waitForElement(getPasswordField()).sendKeys(password, Keys.ENTER);
         return Web.site.appTV.registrationPage;
     }
-    public WebElement getSignUpField() {
+    public WebElement getSignUpButon() {
         return Web.driver.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/form/div/input"));
     }
-    public RegistrationPage clickSignUpField() {
-        waitForElement(getSignUpField()).click();
+    public RegistrationPage clickSignUpButton() {
+        waitForElement(getSignUpButon()).click();
         return Web.site.appTV.registrationPage;
     }
 }

@@ -5,7 +5,7 @@ import org.example.web.Web;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class RegistrPhonePageTest extends BaseTest {
+public class RegistrationPhonePageTest extends BaseTest {
     private static AppTV basePage = Web.site.appTV;
     public SoftAssert softAssert = new SoftAssert();
 
@@ -14,9 +14,8 @@ public class RegistrPhonePageTest extends BaseTest {
         basePage
                 .registrPhonePage
                 .openPage()
-                .windowMaximize()
-                .clickCloseField()
-                .clickJoinField()
+                .clickCloseButton()
+                .clickJoinButton()
                 .clickQuickRegistField()
                 .clickCountryField()
                 .clickCanadaField();

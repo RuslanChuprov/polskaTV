@@ -15,7 +15,6 @@ public class MainPageTest extends  BaseTest {
         basePage
                 .mainPage
                 .openPage()
-                .windowMaximize()
                 .clickCloseField();
     }
 }

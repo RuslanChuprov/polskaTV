@@ -15,8 +15,7 @@ public class MenuIconPageTest {
         basePage
                 .menuIconPage
                 .openPage()
-                .windowMaximize()
-                .clickCloseField()
-                .clickMenuIconField();
+                .clickCloseButton()
+                .clickMenuIconButton();
     }
 }

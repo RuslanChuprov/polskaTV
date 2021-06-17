@@ -15,7 +15,6 @@ public class StartPageTest extends BaseTest {
             basePage
                     .startPage
                     .openPage()
-                    .windowMaximize ()
                     .clickAdditionalField()
                     .clickTransitionField();
 
