@@ -6,8 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class CorrectLoginTest extends BaseTest {
-    private static AppTV basePage = Web.site.appTV;
-    public SoftAssert softAssert = new SoftAssert();
+
 
     @Test(groups = {"checkintest"})
     public void test6() {

@@ -8,14 +8,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.asserts.SoftAssert;
 
 import java.util.concurrent.TimeUnit;
 
 
 //Use testNG
 public class BaseTest {
-
-
+    public SoftAssert softAssert = new SoftAssert();
+    public static AppTV basePage = Web.site.appTV;
     @BeforeMethod
     public void setup() {
         WebDriverManager.chromedriver().setup();

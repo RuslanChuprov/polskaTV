@@ -6,9 +6,8 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import static org.testng.Assert.assertTrue;
 
-public class MenuIconPageTest {
-    private static AppTV basePage = Web.site.appTV;
-    public SoftAssert softAssert = new SoftAssert();
+public class MenuIconPageTest extends BaseTest{
+
 
     @Test (groups = {"checkintest"})
     public void test3 () {

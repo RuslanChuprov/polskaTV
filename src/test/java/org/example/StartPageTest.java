@@ -7,8 +7,6 @@ import org.testng.asserts.SoftAssert;
 import static org.testng.Assert.assertTrue;
 
 public class StartPageTest extends BaseTest {
-        private static AppTV basePage = Web.site.appTV;
-        public SoftAssert softAssert = new SoftAssert();
 
         @Test(groups = {"checkintest"})
         public void test1 () {
