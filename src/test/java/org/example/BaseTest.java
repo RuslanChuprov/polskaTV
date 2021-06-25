@@ -17,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest {
     public SoftAssert softAssert = new SoftAssert();
     public static AppTV basePage = Web.site.appTV;
+
     @BeforeMethod
     public void setup() {
         WebDriverManager.chromedriver().setup();

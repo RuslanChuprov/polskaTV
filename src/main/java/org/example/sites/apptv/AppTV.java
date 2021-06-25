@@ -9,6 +9,7 @@ public class AppTV {
     public RegistrationPage registrationPage = new RegistrationPage();
     public RegistrationPhonePage registrPhonePage = new RegistrationPhonePage();
     public CorrectLogin correctLogin = new CorrectLogin();
+    public PanelLeftMenuPage panelLeftMenuPage = new PanelLeftMenuPage();
 
 
     public AppTV() {

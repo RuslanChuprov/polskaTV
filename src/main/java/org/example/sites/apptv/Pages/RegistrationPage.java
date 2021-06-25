@@ -18,10 +18,7 @@ public class RegistrationPage extends BasePage{
         waitForElement(getCloselField()).click();
         return Web.site.appTV.registrationPage;
     }
-    public RegistrationPage  windowMaximize () {
-        Web.driver.manage().window().maximize();
-        return Web.site.appTV.registrationPage;
-    }
+
     public WebElement getJoinButton() {
         return Web.driver.findElement(By.xpath("//*[@id=\"authorization-link\"]"));
     }

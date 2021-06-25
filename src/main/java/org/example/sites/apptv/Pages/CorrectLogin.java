@@ -17,10 +17,6 @@ public class CorrectLogin extends BasePage {
         waitForElement(getCloselButton()).click();
         return Web.site.appTV.correctLogin;
     }
-   /* public CorrectLogin  windowMaximize () {
-        Web.driver.manage().window().maximize();
-        return Web.site.appTV.correctLogin;
-    } */
     public WebElement getJoinButton() {
         return Web.driver.findElement(By.xpath("//*[@id=\"authorization-link\"]"));
     }

@@ -14,7 +14,8 @@ public class StartPageTest extends BaseTest {
                     .startPage
                     .openPage()
                     .clickAdditionalField()
-                    .clickTransitionField();
+                    .clickTransitionField()
+                    .clickMoviesField();
 
                     }
     }

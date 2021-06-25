@@ -18,8 +18,4 @@ public class MainPage extends BasePage{
         waitForElement(getCloselField()).click();
         return Web.site.appTV.mainPage;
     }
-    public MainPage  windowMaximize () {
-        Web.driver.manage().window().maximize();
-        return Web.site.appTV.mainPage;
-    }
 }

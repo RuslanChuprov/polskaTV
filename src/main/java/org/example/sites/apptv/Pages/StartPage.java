@@ -30,10 +30,6 @@ public class StartPage extends BasePage {
         return Web.site.appTV.startPage;
     }
 
-    public StartPage  windowMaximize () {
-        Web.driver.manage().window().maximize();
-        return Web.site.appTV.startPage;
-    }
 
     public WebElement getMoviesField() {
         return Web.driver.findElement(By.xpath("//*[@id=\"navigation-main_navigation\"]/li[1]/a/span"));
