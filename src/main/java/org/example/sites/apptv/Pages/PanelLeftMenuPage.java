@@ -10,11 +10,9 @@ public class PanelLeftMenuPage extends BasePage {
         Web.driver.get("https://test.polskafirmatv.com/");
         return Web.site.appTV.panelLeftMenuPage;
     }
-    public WebElement getCloselButton() {
-        return Web.driver.findElement(By.xpath("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button"));
-    }
+
     public PanelLeftMenuPage clickCloseButton() {
-        waitForElement(getCloselButton()).click();
+        waitForElement(getCloselButton("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button")).click();
         return Web.site.appTV.panelLeftMenuPage;
     }
     public WebElement getPanelLeftButton() {

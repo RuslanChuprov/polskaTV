@@ -8,7 +8,8 @@ import org.testng.asserts.SoftAssert;
 public class RegistrationPhonePageTest extends BaseTest {
 
     @Test(groups = {"checkintest"})
-    public void test5() {
+    public void test5() throws Exception {
+        WriteLogs.LogTestSteps("RegistrationPhonePageTest is incorrect");
         basePage
                 .registrPhonePage
                 .openPage()

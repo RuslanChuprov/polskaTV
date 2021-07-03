@@ -10,10 +10,11 @@ public class MainPageTest extends  BaseTest {
 
 
     @Test (groups = {"checkintest"})
-    public void test2 () {
+    public void test2 () throws Exception {
+        WriteLogs.LogTestSteps("MainPageTest is incorrect");
         basePage
                 .mainPage
                 .openPage()
-                .clickCloseField();
+                .clickCloseButton();
     }
 }

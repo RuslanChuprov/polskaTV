@@ -11,11 +11,9 @@ public class MainPage extends BasePage{
         return Web.site.appTV.mainPage;
     }
 
-    public WebElement getCloselField() {
-        return Web.driver.findElement(By.xpath("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button"));
-    }
-    public MainPage clickCloseField() {
-        waitForElement(getCloselField()).click();
+
+    public MainPage clickCloseButton() {
+        waitForElement(getCloselButton("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button")).click();
         return Web.site.appTV.mainPage;
     }
 }

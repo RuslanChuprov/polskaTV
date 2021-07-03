@@ -10,11 +10,8 @@ public class CorrectLogin extends BasePage {
         return Web.site.appTV.correctLogin;
     }
 
-    public WebElement getCloselButton() {
-        return Web.driver.findElement(By.xpath("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button"));
-    }
-    public CorrectLogin clickCloseButton() {
-        waitForElement(getCloselButton()).click();
+       public CorrectLogin clickCloseButton() {
+        waitForElement(getCloselButton("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button")).click();
         return Web.site.appTV.correctLogin;
     }
     public WebElement getJoinButton() {

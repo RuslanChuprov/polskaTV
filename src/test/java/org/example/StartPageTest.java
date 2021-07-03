@@ -9,10 +9,12 @@ import static org.testng.Assert.assertTrue;
 public class StartPageTest extends BaseTest {
 
         @Test(groups = {"checkintest"})
-        public void test1 () {
+        public void test1 () throws Exception {
+            WriteLogs.LogTestSteps("StartPageTest is incorrect");
             basePage
                     .startPage
                     .openPage()
+                    .clickCloseButton()
                     .clickAdditionalField()
                     .clickTransitionField()
                     .clickMoviesField();

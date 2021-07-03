@@ -11,12 +11,8 @@ public class MenuIconPage extends BasePage {
         return Web.site.appTV.menuIconPage;
     }
 
-    public WebElement getCloselButton() {
-        return Web.driver.findElement(By.xpath("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button"));
-    }
-
     public MenuIconPage clickCloseButton() {
-        waitForElement(getCloselButton()).click();
+        waitForElement(getCloselButton("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button")).click();
         return Web.site.appTV.menuIconPage;
     }
 

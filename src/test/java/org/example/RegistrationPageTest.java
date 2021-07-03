@@ -8,11 +8,12 @@ import org.testng.asserts.SoftAssert;
 public class RegistrationPageTest extends BaseTest {
 
     @Test(groups = {"checkintest"})
-    public void test4() {
+    public void test4() throws Exception {
+        WriteLogs.LogTestSteps("RegistrationPageTest is incorrect");
         basePage
                 .registrationPage
                 .openPage()
-                .clickCloseField()
+                .clickCloseButton()
                 .clickJoinButton()
                 .clickQuickRegistField()
                 .typeTextToEmailField(Credentials.EMAIL)

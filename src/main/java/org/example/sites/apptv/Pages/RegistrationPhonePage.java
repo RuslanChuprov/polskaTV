@@ -10,12 +10,9 @@ public class RegistrationPhonePage extends BasePage {
         return Web.site.appTV.registrPhonePage;
     }
 
-    public WebElement getCloselButton() {
-        return Web.driver.findElement(By.xpath("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button"));
-    }
 
     public RegistrationPhonePage clickCloseButton() {
-        waitForElement(getCloselButton()).click();
+        waitForElement(getCloselButton("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button")).click();
         return Web.site.appTV.registrPhonePage;
     }
 

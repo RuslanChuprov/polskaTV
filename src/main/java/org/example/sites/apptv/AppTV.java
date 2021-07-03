@@ -10,7 +10,8 @@ public class AppTV {
     public RegistrationPhonePage registrPhonePage = new RegistrationPhonePage();
     public CorrectLogin correctLogin = new CorrectLogin();
     public PanelLeftMenuPage panelLeftMenuPage = new PanelLeftMenuPage();
-
+    public SubscriptionPremium subscriptionPremium = new SubscriptionPremium();
+    public SubscriptionPlus subscriptionPlus = new SubscriptionPlus();
 
     public AppTV() {
     }

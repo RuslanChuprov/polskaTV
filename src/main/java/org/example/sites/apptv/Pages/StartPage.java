@@ -12,6 +12,10 @@ public class StartPage extends BasePage {
         return Web.site.appTV.startPage;
     }
 
+    public StartPage clickCloseButton() {
+        waitForElement(getCloselButton("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button")).click();
+        return Web.site.appTV.startPage;
+    }
     public WebElement getAdditionalField() {
          return Web.driver.findElement(By.xpath("//*[@id=\"details-button\"]"));
     }

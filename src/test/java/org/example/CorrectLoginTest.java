@@ -9,7 +9,8 @@ public class CorrectLoginTest extends BaseTest {
 
 
     @Test(groups = {"checkintest"})
-    public void test6() {
+    public void test6() throws Exception {
+        WriteLogs.LogTestSteps("CorrectLoginTest is incorrect");
         basePage
                 .correctLogin
                 .openPage()

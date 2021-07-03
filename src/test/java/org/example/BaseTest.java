@@ -31,7 +31,7 @@ public class BaseTest {
     }
 
 
-    /*@AfterMethod
-    public void close() {Web.driver.quit();}*/
+    @AfterMethod
+    public void close() {Web.driver.quit();}
 
 }

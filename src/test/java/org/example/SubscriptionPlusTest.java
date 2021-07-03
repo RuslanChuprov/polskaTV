@@ -4,16 +4,18 @@ import org.example.web.Web;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class PanelLeftMenuPageTest extends BaseTest{
+public class SubscriptionPlusTest extends BaseTest{
     @Test(groups = {"checkintest"})
-    public void test7() throws Exception {
-        WriteLogs.LogTestSteps("PanelLeftMenuPageTest is incorrect");
+    public void test9() throws Exception {
+        WriteLogs.LogTestSteps("SubscriptionPlusTest is incorrect");
         basePage
-                .panelLeftMenuPage
+                .subscriptionPlus
                 .openPage()
                 .clickCloseButton()
-                .clickPanelLeftButton()
-                .clickPremiumPackageButton();
+                .clickMenuIconButton()
+                .clickSubscriptionPlusButton();
+
+
 
     }
 }

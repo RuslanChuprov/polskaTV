@@ -11,11 +11,9 @@ public class RegistrationPage extends BasePage{
         return Web.site.appTV.registrationPage;
     }
 
-    public WebElement getCloselField() {
-        return Web.driver.findElement(By.xpath("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button"));
-    }
-    public RegistrationPage clickCloseField() {
-        waitForElement(getCloselField()).click();
+
+    public RegistrationPage clickCloseButton() {
+        waitForElement(getCloselButton("//*[@id=\"frmCallMe_modal\"]/div/div/div[1]/button")).click();
         return Web.site.appTV.registrationPage;
     }
 

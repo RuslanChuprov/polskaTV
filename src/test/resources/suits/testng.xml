@@ -70,6 +70,39 @@
       <class name = "org.example.CorrectLoginTest"/>
     </classes>
   </test>
+
+  <test name = "test7">
+    <groups>
+      <run>
+        <include name="checkintest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name = "org.example.PanelLeftMenuPageTest"/>
+    </classes>
+  </test>
+
+  <test name = "test8">
+    <groups>
+      <run>
+        <include name="checkintest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name = "org.example.SubscriptionPremiumTest"/>
+    </classes>
+  </test>
+
+  <test name = "test9">
+    <groups>
+      <run>
+        <include name="checkintest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name = "org.example.SubscriptionPlusTest"/>
+    </classes>
+  </test>
  </suite>
 
 
